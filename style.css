@@ -109,6 +109,12 @@
 	object-fit: cover;
 	margin: 0 15px 0 0;
 }
+.inlineIcon {
+	display: inline;
+	width: 1.2em;
+	height: auto;
+	margin: 0;
+}
 
 /*FORMATTING CLASSES*/
 .ltf {
@@ -150,6 +156,11 @@ h1 {
   margin-top: 4%;
   font-size: 75px;
   text-align: center;
+}
+hr {
+	background-color: #DCB50A;
+	border: 3px solid #DCB50A;
+	border-radius: 3px;
 }
 h2 {
 	font-size: 40px;
