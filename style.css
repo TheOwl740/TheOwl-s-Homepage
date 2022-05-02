@@ -1,5 +1,6 @@
 /*SINGLE USE CLASSES*/
 #mainHead {
+	margin: 0;
   text-align: right;
   width: 100%;
   position: absolute;
@@ -7,6 +8,7 @@
   right: 125px;
   font-size: 45px;
   text-shadow: 0px 0px 5px black;
+	animation: titleAni 1s;
 }
 .nav {
   position: fixed;
@@ -150,7 +152,8 @@ p {
 	float: right;
 }
 .contentBox {
-  margin: 20px;
+  margin: 2%;
+	width: 96%
 }
 h1 {
   margin-top: 4%;
@@ -161,6 +164,9 @@ hr {
 	background-color: #DCB50A;
 	border: 3px solid #DCB50A;
 	border-radius: 3px;
+	margin: 20px;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 h2 {
 	font-size: 40px;
@@ -176,8 +182,83 @@ img {
 h3 {
 	margin: 5px;
 }
+div {
+	height: auto;
+	width: 100%;
+}
 
 /*ANIMATION CLASSES*/
+.slideUp {
+	animation: slideFromBottom 1s;
+}
+@keyframes slideFromBottom {
+	from {
+		opacity: 0;
+		transform: translate(0, 50px);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes titleAni {
+	from {
+		opacity: 0;
+		transform: translate(-6%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+.slideRightAdd {
+	opacity: 0;
+}
+.slideRight {
+	animation: slideFromLeft 1s;
+}
+@keyframes slideFromLeft {
+	from {
+		opacity: 0;
+		transform: translate(-10%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+.appearAdd {
+	opacity: 0;
+}
+.appear {
+	animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.slideLeft {
+	animation: slideFromRight 1s;
+}
+@keyframes slideFromRight {
+	from {
+		opacity: 0;
+		transform: translate(10%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
 .expand {
 	box-shadow: 0 2px 2px #555555;
 	animation: cardRetract 0.2s;
