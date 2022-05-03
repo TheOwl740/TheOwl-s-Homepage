@@ -83,7 +83,7 @@
   flex-flow: row nowrap;
 }
 .card {
-  background-color: #DDDDDD;
+  background-color: #EEEEEE;
   border-radius: 5px;
   box-shadow: 0 2px 2px #555555;
   margin: 15px;
@@ -91,10 +91,11 @@
 	height: fit-content;
 }
 .card:active {
-  background-color: #DEEEDE;
+  background-color: #EFFFEF;
+	animation: whiten 0.2s linear;
 }
 .largeCard {
-	background-color: #DDDDDD;
+	background-color: #EEEEEE;
   border-radius: 10px;
   box-shadow: 0 2px 2px #555555;
   margin: 1%;
@@ -102,6 +103,10 @@
   height: 450px;
 	overflow: hidden;
 	display: block;
+}
+.largeCard:active {
+  background-color: #EFFFEF;
+	animation: whiten 0.2s linear;
 }
 .imgCardLeft {
 	width: 50%;
@@ -161,8 +166,8 @@ h1 {
   text-align: center;
 }
 hr {
-	background-color: #DCB50A;
-	border: 3px solid #DCB50A;
+	background-color: #FFD73C;
+	border: 3px solid #FFD73C;
 	border-radius: 3px;
 	margin: 20px;
 	margin-top: 60px;
@@ -174,7 +179,7 @@ h2 {
 body {
   margin: 0;
   font-family: "Trebuchet MS";
-  background-color: #CCCCCC;
+  background-color: #CCEEFF;
 }
 img {
 	border-radius: 10px;
@@ -188,6 +193,15 @@ div {
 }
 
 /*ANIMATION CLASSES*/
+@keyframes whiten {
+	from {
+		background-color: #EEEEEE;
+	}
+	to {
+		background-color: #EFFFEF;
+	}
+}
+
 .slideUp {
 	animation: slideFromBottom 1s;
 }
